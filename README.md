@@ -9,7 +9,7 @@
 - 现工作于大参林医药集团医疗事业中心，带领6人Android团队进行购药、问诊、慢病服务等医疗相关app开发.
 - 📫联系方式: abbenyyyyyy@qq.com
 
-### [博客最近更新
+### 博客最近更新
 - [基于Puppeteer的自动化网页操作实践](https://blog.abbenyyy.cn//2021/09/22/%E5%9F%BA%E4%BA%8EPuppeteer%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E7%BD%91%E9%A1%B5%E6%93%8D%E4%BD%9C%E5%AE%9E%E8%B7%B5.html) - 2021-09-21 
 - [Android静态代码扫描实践—4、自定义ktlint规则](https://blog.abbenyyy.cn//2021/07/22/Android%E9%9D%99%E6%80%81%E4%BB%A3%E7%A0%81%E6%89%AB%E6%8F%8F%E5%AE%9E%E8%B7%B5-4-%E8%87%AA%E5%AE%9A%E4%B9%89ktlint%E8%A7%84%E5%88%99.html) - 2021-07-21 
 - [Android静态代码扫描实践—3、配置GitLab Runner与编写.gitlab-ci.yml](https://blog.abbenyyy.cn//2021/07/12/Android%E9%9D%99%E6%80%81%E4%BB%A3%E7%A0%81%E6%89%AB%E6%8F%8F%E5%AE%9E%E8%B7%B5-3-%E9%85%8D%E7%BD%AEGitLab-Runner%E4%B8%8E%E7%BC%96%E5%86%99gitlab-ci.html) - 2021-07-11 
