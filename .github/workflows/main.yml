@@ -1,0 +1,22 @@
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    # 周二、周五的 19:00 自动执行
+    - cron: "0 19 * * 2,5"
+
+jobs:
+  auto_update_readme_job:
+    runs-on: ubuntu-latest
+    name: Update Blog Post To Readme
+    steps:
+      # 检出代码仓库
+      - name: Checkout
+        uses: actions/checkout@v2
+      # 使用父目录的自定义 action 更新 readme
+      - name: Update-Readme
+        uses: ./
+      # 由于 github 仓库一段时间不活动会停止 action ，所以这里防止被停止 https://www.npmjs.com/package/keepalive-workflow
+      - name: Keepalive-Workflow
+        uses: gautamkrishnar/keepalive-workflow@master

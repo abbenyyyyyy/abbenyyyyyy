@@ -1,0 +1,22 @@
+name: "Update Blog Post To Readme Workflow"
+author: "Benzan Chen"
+description: "更新博客文章列表到readme"
+inputs:
+  gh_token:
+    description: "用于更新readme的token"
+    required: false
+    default: ${{ github.token }}
+  committer_username:
+    description: "自动 commit Github 使用的 Username"
+    required: false
+    default: "update-blog-post-bot"
+  committer_email:
+    description: "自动 commit Github 使用的 Email"
+    required: false
+    default: "abbenyyyyyy@qq.com"
+runs:
+  using: "node16"
+  main: "index.js"
+branding:
+  icon: "activity"
+  color: "blue"
