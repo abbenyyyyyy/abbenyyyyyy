@@ -40,7 +40,6 @@ const buildNewReadme = (previousContent, newContent) => {
           startOfOpening + startTag.length,
           endOfOpening
         ),
-        "\n",
         newContent,
         previousContent.slice(endOfOpening, previousContent.length),
       ].join("");
@@ -83,7 +82,7 @@ const exec = (cmd, args = [], options = {}) =>
 
 const main = async () => {
   // 从博客RSS中拉取数据，构造新的 '博客最近更新'
-  let addReadme = "";
+  let addReadme = "\n";
   let parser = new Parser();
   let feed = await parser.parseURL(RSS_URL);
   let addCount =
