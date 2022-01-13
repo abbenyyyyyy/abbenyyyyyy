@@ -42,7 +42,6 @@ const buildNewReadme = (previousContent, newContent) => {
         ),
         "\n",
         newContent,
-        "\n",
         previousContent.slice(endOfOpening, previousContent.length),
       ].join("");
     }
@@ -98,6 +97,7 @@ const main = async () => {
         DATA_FORMAT_STYLE
       )} \n`;
   }
+  addReadme = addReadme + "\n";
   core.notice(`新替换文本:${addReadme}`);
   // 读取原本的 readme , 然后构建新的 readme , 再比对新旧是否相同
   const readmeData = fs.readFileSync(README_FILE_PATH, "utf-8");
@@ -111,7 +111,7 @@ const main = async () => {
     const COMMITTER_EMAIL = core.getInput("committer_email");
     // 将 GITHUB_TOKEN 设为秘密，不在日志中显示
     core.setSecret(GITHUB_TOKEN);
-    core.notice('执行 git 设置命令');
+    core.notice("执行 git 设置命令");
     await exec("git", ["config", "--global", "user.email", COMMITTER_EMAIL]);
     if (GITHUB_TOKEN) {
       await exec("git", [
