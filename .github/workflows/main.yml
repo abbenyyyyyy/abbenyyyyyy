@@ -13,7 +13,7 @@ jobs:
     steps:
       # 检出代码仓库
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       # 使用父目录的自定义 action 更新 readme
       - name: Update-Readme
         uses: ./
